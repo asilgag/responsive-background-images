@@ -177,8 +177,6 @@
       elSrcSet = ResponsiveBackgroundImages.parseSrcSet(elSrcSetRawData);
 
       if (elSrcSet.length > 0) {
-
-        // ResponsiveBackgroundImages.getBestMatch()
         for (var x = 0, xLen = elSrcSet.length; x < xLen; x++) {
           // Find images bigger than element width, or fallback to the biggest one
           if (elSrcSet[x].width >= elWidth || x === xLen - 1) {
@@ -265,7 +263,6 @@
   ResponsiveBackgroundImages.addResizeEvent = function() {
     window.addEventListener('resize', debounce(ResponsiveBackgroundImages.run , settings.interval));
   };
-
 
   // Auto initialize
   ResponsiveBackgroundImages.run();
