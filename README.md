@@ -6,12 +6,12 @@ Reuses already loaded images, to avoid loading a smaller image when we already h
 This featured can be individually tweaked to force loading of those smaller images (useful when image art differs between sizes).
 
 
-##Usage
+## Usage ##
 
 Add the JS at the end of the body.
 The script initializes automatically on load and adds a resize handler that sets the corresponding background-image on breakpoint change.
 ```javascript
-<script src="js/responsive-background-images.js" defer></script>
+<script src="responsive-background-images.min.js" defer></script>
 ```
 
 Add the element with responsive background images
